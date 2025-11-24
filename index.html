@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -58,17 +58,19 @@
       }
 
       .hero-title {
-        font-family: "Playfair Display", serif;
+        /* font-family: "Playfair Display", serif; */
+        font-family: Cormorant;
         font-weight: 700;
         font-size: 44px;
         line-height: 52px;
+        letter-spacing: 0%;
       }
 
       .property-details {
+        margin: 12px 0;
         display: flex;
         align-items: center;
         gap: 15px;
-        margin-bottom: 15px;
         flex-wrap: wrap;
       }
 
@@ -138,7 +140,7 @@
 
       .section-text {
         color: #333;
-        font-family: "Raleway", sans-serif;
+        font-family: "Raleway";
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -170,7 +172,7 @@
 
       .gallery-item {
         position: relative;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         overflow: hidden;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
@@ -591,7 +593,7 @@
 
       @media (max-width: 480px) {
         .amenities-grid {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
         }
 
         .arrival-grid {
@@ -644,6 +646,75 @@
         font-size: 1.1rem;
         text-align: center;
         font-family: "Raleway", sans-serif;
+      }
+
+      .inspirational-section {
+        background: #efeee3;
+        padding: 40px 20px;
+        text-align: center;
+        color: #333;
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .inspirational-title {
+        font-family: Cormorant Garamond;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 46px;
+        letter-spacing: 1%;
+        text-align: center;
+      }
+
+      .inspirational-quote {
+        font-family: Cormorant Garamond;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 46px;
+        letter-spacing: 1%;
+        text-align: center;
+        margin: 64px 0px 10px 0px;
+      }
+
+      .inspirational-attribution {
+        font-family: Cormorant Garamond;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 46px;
+        letter-spacing: 1%;
+        text-align: center;
+        margin-bottom: 64px;
+      }
+
+      .inspirational-phrase-large {
+        font-family: Cormorant Garamond;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 32px;
+        letter-spacing: 1%;
+        text-align: center;
+      }
+
+      .inspirational-phrase-medium {
+        font-family: Cormorant Garamond;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 35px;
+        letter-spacing: 1%;
+        text-align: center;
+      }
+
+      .inspirational-phrase-small {
+        font-family: Cormorant Garamond;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 32px;
+        letter-spacing: 1%;
+        margin: 32px 0px 64px 0px;
+        text-align: center;
+      }
+
+      .inspirational-spacing {
+        margin-bottom: 35px;
       }
     </style>
   </head>
@@ -1330,6 +1401,39 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Inspirational Section -->
+      <div class="inspirational-section">
+        <div class="inspirational-title">
+          The Search Ends<br />
+          Serenity Begins
+        </div>
+
+        <div class="inspirational-quote">
+          "wherever you go, go with all your heart."
+        </div>
+        <div class="inspirational-attribution">confucius</div>
+
+        <div class="inspirational-spacing">
+          <div class="inspirational-phrase-large">extraordinary</div>
+          <div class="inspirational-phrase-large">experiences</div>
+          <div class="inspirational-phrase-small">right to you</div>
+        </div>
+
+        <div class="inspirational-spacing">
+          <div class="inspirational-phrase-medium">reconnect with what's</div>
+          <div class="inspirational-phrase-medium" style="margin-bottom: 64px;">
+            really important in life
+          </div>
+        </div>
+
+        <div class="inspirational-spacing">
+          <div class="inspirational-phrase-medium">Beyond the World.</div>
+          <div class="inspirational-phrase-medium" style="margin-bottom: 64px;">Just Yours.</div>
+        </div>
+
+        <div class="inspirational-phrase-medium">Just Stay. Always.</div>
       </div>
     </div>
   </body>
