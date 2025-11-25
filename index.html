@@ -29,7 +29,6 @@
         margin: 0 auto;
         background: #f9f7f4;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
         overflow: hidden;
       }
 
@@ -146,7 +145,7 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.25px;
-        margin-bottom: 25px;
+        margin-bottom: 8px;
       }
 
       .image-gallery {
@@ -174,6 +173,7 @@
       .gallery-item {
         position: relative;
         /* border-radius: 15px; */
+        height: 288px;
         overflow: hidden;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
@@ -230,7 +230,10 @@
       .highlight-icon {
         font-size: 1.8rem;
         margin-bottom: 8px;
-        color: #e67e22;
+        width: 1.8rem;
+        height: 1.8rem;
+        filter: brightness(25) saturate(41%) invert(50%) sepia(65%)
+          saturate(7381%) hue-rotate(19deg) brightness(104%) contrast(84%);
       }
 
       .highlight-title {
@@ -246,8 +249,8 @@
       .amenities-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        gap: 15px;
-        margin: 25px 0;
+        gap: 32px;
+        margin: 16px 0px 54px 0px;
         justify-items: center;
       }
 
@@ -352,6 +355,7 @@
       .bedroom-thumb {
         position: relative;
         overflow: hidden;
+        height: 120px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       }
 
@@ -447,7 +451,7 @@
         font-family: "Playfair Display", serif;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 12px;
       }
 
       .reviews-summary {
@@ -526,7 +530,7 @@
         font-size: 16px;
         line-height: 16px;
         letter-spacing: 0.25px;
-       margin-bottom: 32px;
+        margin-bottom: 32px;
       }
 
       .review-text {
@@ -604,7 +608,7 @@
         }
 
         .arrival-card {
-          max-width: 100%;
+          min-width: 160px;
         }
       }
 
@@ -912,10 +916,7 @@
         <div class="content-section">
           <div class="verification-badge">
             <div class="verification-title">
-              <img
-                src="https://bid-your-stay.s3.ap-south-1.amazonaws.com/assets/images/bys-verified.svg"
-                alt="verified"
-              />
+              <img src="verified-symbol.svg" alt="verified" />
             </div>
             <hr style="border: none; border-top: 1px solid #444" />
             <div class="verification-features" id="verificationFeatures">
@@ -1041,7 +1042,7 @@
               </div>
 
               <div class="bedroom-thumbnails single">
-                <div class="gallery-item bedroom-thumb">
+                <div class="gallery-item">
                   <img
                     src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80"
                     alt="Bedroom 3 detail"
@@ -1251,11 +1252,14 @@
         <!-- Reviews Section -->
         <div class="reviews-section">
           <div class="reviews-rating">
-            <img
-              src="https://bid-your-stay.s3.ap-south-1.amazonaws.com/assets/images/rating.svg"
-              alt="rating"
-            />
-            4.23 • 26 Reviews
+            <span>
+              <img
+                src="https://bid-your-stay.s3.ap-south-1.amazonaws.com/assets/images/rating.svg"
+                alt="rating"
+              />
+              4.23</span
+            >
+            • <span>26 Reviews</span>
           </div>
           <div class="reviews-summary">
             The overall experience was overwhelmingly positive, making it highly
